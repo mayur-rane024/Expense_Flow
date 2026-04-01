@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": "0cfecaa3-04b4-46fd-b1c5-990bd80d6178",
+      "full_name": "John Admin",
+      "email": "admin@acme.com",
+      "role": "ADMIN",
+      "manager_id": null
+    },
+    {
+      "id": "5e4c0b33-ecd3-4d4a-898e-14d4b91e8465",
+      "full_name": "Mayuresh Shailesh Rane",
+      "email": "mayuresh.rane23@pccoepune.org",
+      "role": "ADMIN",
+      "manager_id": null
+    },
+    {
+      "id": "28e7ebcb-2c5d-457d-bfed-eeb6bbd48d76",
+      "full_name": "Bob Manager",
+      "email": "bobmanager@gmail.com",
+      "role": "MANAGER",
+      "manager_id": null
+    },
+    {
+      "id": "b74d7218-7536-452e-996a-ef200bda37a6",
+      "full_name": "Charlie employee",
+      "email": "charlieemployee@gmail.com",
+      "role": "EMPLOYEE",
+      "manager_id": "28e7ebcb-2c5d-457d-bfed-eeb6bbd48d76"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "fe687b27-2e6a-49d8-9511-f7e874bce652",
+      "amount": "500.00",
+      "status": "PENDING",
+      "current_step_order": 1,
+      "user_id": "b74d7218-7536-452e-996a-ef200bda37a6"
+    }
+  ],
+  "steps": [
+    {
+      "id": "309d5b8d-74d5-438c-9751-7f758e017d82",
+      "expense_id": "fe687b27-2e6a-49d8-9511-f7e874bce652",
+      "step_order": 2,
+      "approver_id": "5e4c0b33-ecd3-4d4a-898e-14d4b91e8465",
+      "status": "PENDING"
+    }
+  ]
+}

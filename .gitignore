@@ -1,0 +1,18 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+*.log
+.DS_Store
+*.json
+!package.json
+!package-lock.json
+!db_state.json
+!wf_state.json
+
+# If you prefer to ignore all .json except package files, uncomment below:
+# *.json
+# !package.json
+# !package-lock.json

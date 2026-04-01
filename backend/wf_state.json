@@ -1,0 +1,55 @@
+{
+  "workflows": [
+    {
+      "id": "872380c0-0aa8-4ed6-bd3f-49010b558941",
+      "company_id": "2b9a49ed-3c90-44bc-b6fe-726494fd94ea",
+      "name": "AMAZON_wf1",
+      "is_default": false,
+      "created_at": "2026-03-29T06:37:48.542Z",
+      "deleted_at": null
+    },
+    {
+      "id": "0a24b61d-a4bb-4faf-b08f-b7215281d8e0",
+      "company_id": "681c61c8-5a0c-40f3-aa14-22890ff9883e",
+      "name": "Standard Reimbursment",
+      "is_default": false,
+      "created_at": "2026-03-29T06:46:48.885Z",
+      "deleted_at": null
+    }
+  ],
+  "ws": [
+    {
+      "id": "82e4842f-6280-48c2-9b6b-5c9317e492e4",
+      "workflow_id": "872380c0-0aa8-4ed6-bd3f-49010b558941",
+      "step_order": 1,
+      "rule_type": "PERCENTAGE",
+      "rule_value": {
+        "threshold": 0.75
+      },
+      "is_manager_step": true,
+      "created_at": "2026-03-29T06:37:48.542Z"
+    },
+    {
+      "id": "a0042f53-6066-4ae3-9406-003fa6167bb1",
+      "workflow_id": "0a24b61d-a4bb-4faf-b08f-b7215281d8e0",
+      "step_order": 1,
+      "rule_type": "PERCENTAGE",
+      "rule_value": {
+        "threshold": 1
+      },
+      "is_manager_step": false,
+      "created_at": "2026-03-29T06:46:48.885Z"
+    },
+    {
+      "id": "7f1d71bd-d7fe-4f5d-922f-b66c83c2b96b",
+      "workflow_id": "0a24b61d-a4bb-4faf-b08f-b7215281d8e0",
+      "step_order": 2,
+      "rule_type": "SPECIFIC",
+      "rule_value": {
+        "required_user_id": "5e4c0b33-ecd3-4d4a-898e-14d4b91e8465"
+      },
+      "is_manager_step": false,
+      "created_at": "2026-03-29T06:46:48.885Z"
+    }
+  ]
+}
